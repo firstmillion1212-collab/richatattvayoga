@@ -1,0 +1,142 @@
+.contact {
+  background-color: var(--white);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateX(5px);
+}
+
+.icon {
+  color: var(--secondary);
+  background-color: rgba(127, 175, 159, 0.15);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardContent h4 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.cardContent p {
+  margin-bottom: 0;
+  color: var(--text-light);
+}
+
+.formContainer {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid rgba(44, 48, 46, 0.2);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.input:focus, .textarea:focus {
+  border-color: var(--primary);
+  background-color: var(--white);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.successMsg {
+  padding: 1rem;
+  background-color: #e6f4ea;
+  color: #1e8e3e;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.errorMsg {
+  padding: 1rem;
+  background-color: #fce8e6;
+  color: #d93025;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .formContainer {
+    padding: 2rem;
+  }
+}
