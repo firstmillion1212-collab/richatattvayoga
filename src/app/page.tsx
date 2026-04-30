@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import WhyYoga from "@/components/WhyYoga";
+import YouTubeSection from "@/components/YouTubeSection";
 import Pricing from "@/components/Pricing";
-import Schedule from "@/components/Schedule";
+import TeacherTraining from "@/components/TeacherTraining";
 import Instructor from "@/components/Instructor";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
@@ -20,8 +21,9 @@ export default function Home() {
       <main>
         <Hero />
         <WhyYoga />
+        <YouTubeSection />
         <Pricing />
-        <Schedule />
+        <TeacherTraining />
         <Instructor />
         <Gallery />
         <Testimonials />

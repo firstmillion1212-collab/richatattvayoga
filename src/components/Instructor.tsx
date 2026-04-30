@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Instructor.module.css";
-import { GraduationCap, Award, BookOpen, Star } from "lucide-react";
+import Link from "next/link";
 
 export default function Instructor() {
   return (
@@ -30,39 +30,13 @@ export default function Instructor() {
               </p>
               <p>
                 Today, I am dedicated to sharing this transformative practice, helping my students 
-                build physical strength, mental clarity, and emotional resilience through personalized 
-                guidance and mindful movement.
+                build physical strength, mental clarity, and emotional resilience.
               </p>
-            </div>
-
-            <div className={styles.timeline}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><GraduationCap size={20} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Academic Foundation</h4>
-                  <p>B.Tech & M.Tech in Engineering</p>
-                </div>
-              </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><BookOpen size={20} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Educational Expertise</h4>
-                  <p>Bachelor of Education (B.Ed)</p>
-                </div>
-              </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><Star size={20} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Yogic Science Mastery</h4>
-                  <p>MSc in Yogic Science</p>
-                </div>
-              </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><Award size={20} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Professional Certifications</h4>
-                  <p>AYUSH Certified Yoga Practitioner</p>
-                </div>
+              
+              <div style={{ marginTop: '2rem' }}>
+                <Link href="/instructor" className="btn-primary">
+                  Know Your Instructor
+                </Link>
               </div>
             </div>
           </div>

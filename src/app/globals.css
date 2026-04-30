@@ -1,14 +1,14 @@
 :root {
-  /* Color Palette */
-  --primary: #7FAF9F;
-  --primary-hover: #6c9a8a;
-  --secondary: #1F7A63;
+  /* Color Palette - Updated for better contrast and deeper greens */
+  --primary: #417B65; /* Deeper Sage Green */
+  --primary-hover: #2F5C4A;
+  --secondary: #145946; /* Deeper Emerald */
   --bg-color: #F7F9F8;
-  --accent: #D4E5DF;
-  --text-dark: #2C302E;
-  --text-light: #5B615E;
+  --accent: #B2D0C4;
+  --text-dark: #1A1D1C;
+  --text-light: #4A504D;
   --white: #FFFFFF;
-  --border-color: rgba(44, 48, 46, 0.1);
+  --border-color: rgba(26, 29, 28, 0.1);
 
   /* Design Tokens */
   --radius-sm: 8px;
@@ -16,10 +16,10 @@
   --radius-lg: 24px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.08);
+  /* Shadows - Enhanced for more elevation and depth */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
 
   /* Typography */
   --font-sans: var(--font-inter), sans-serif;
@@ -123,7 +123,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
   color: var(--white);
   padding: 0.875rem 2rem;
   border-radius: var(--radius-full);
@@ -133,10 +133,11 @@ button {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover);
+  background: linear-gradient(135deg, var(--primary-hover) 0%, var(--primary) 100%);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
+
 
 .btn-secondary {
   display: inline-flex;

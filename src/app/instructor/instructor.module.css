@@ -1,0 +1,105 @@
+.pageWrapper {
+  padding-top: 80px; /* Space for navbar */
+  min-height: 100vh;
+}
+
+.hero {
+  background-color: var(--bg-color);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contentSection {
+  padding: 4rem 0;
+}
+
+.splitLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 992px) {
+  .splitLayout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.imagePlaceholder {
+  background-color: var(--accent);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  box-shadow: var(--shadow-md);
+}
+
+.story h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.story p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.qualifications {
+  margin-top: 4rem;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.qualifications h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.timelineIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.timelineContent h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent p {
+  margin: 0;
+}

@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
+import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -30,6 +31,24 @@ export default function Footer() {
               <p>Yeshwanthpur, Bangalore</p>
               <p>+91 7892034782</p>
               <p>firstmillion1212@gmail.com</p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className={styles.title}>Connect With Us</h4>
+            <div className={styles.socialLinks}>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
+                <FaInstagram size={24} />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
+                <FaFacebook size={24} />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
+                <FaYoutube size={24} />
+              </a>
+              <a href="https://wa.me/917892034782" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="WhatsApp">
+                <FaWhatsapp size={24} />
+              </a>
             </div>
           </div>
         </div>
