@@ -34,10 +34,12 @@ export default function Chatbot() {
       
       if (optionText === "Pricing") {
         botResponse = "We offer both 1-on-1 personalized sessions and Group sessions. Prices start at 4 sessions/month. You can find full details in our Pricing section!";
-      } else if (optionText === "Schedule") {
-        botResponse = "We have morning and evening classes from Mon to Sat. For example, Morning Flow at 6:30 AM and Hatha Yoga at 5:00 PM. Check out the Schedule section for the full timetable.";
+      } else if (optionText === "Yoga Queries") {
+        botResponse = "Yoga is for everyone! Whether you're looking for weight management, stress relief, or therapeutic yoga, we have a program tailored for you.";
+      } else if (optionText === "Teacher Training") {
+        botResponse = "Our AYUSH-certified Teacher Training program is a 200-hour comprehensive course. Check out the Teacher Training section for more details!";
       } else if (optionText === "Book a Demo") {
-        botResponse = "That's wonderful! You can click the 'Book a Free Demo Class' button anywhere on the page to submit your request, and Richa will reach out to confirm the timing.";
+        botResponse = "That's wonderful! You can click the 'Book a Free Demo Class' button to submit your request, and Richa will reach out to confirm the timing.";
       } else {
         botResponse = "For more specific queries, please use the Contact Form or message us directly on WhatsApp!";
       }
@@ -74,8 +76,14 @@ export default function Chatbot() {
             <button className={styles.optionBtn} onClick={() => handleOptionClick("Pricing")}>
               Pricing
             </button>
-            <button className={styles.optionBtn} onClick={() => handleOptionClick("Schedule")}>
-              Schedule
+            <button className={styles.optionBtn} onClick={() => handleOptionClick("Yoga Queries")}>
+              Yoga Queries
+            </button>
+            <button className={styles.optionBtn} onClick={() => handleOptionClick("Teacher Training")}>
+              Teacher Training
+            </button>
+            <button className={styles.optionBtn} onClick={() => handleOptionClick("Contact")}>
+              Contact
             </button>
             <button className={styles.optionBtn} onClick={() => handleOptionClick("Book a Demo")}>
               Book a Demo

@@ -16,7 +16,7 @@ const TeacherTraining = () => {
           <div className={styles.leftPanel}>
             <h3>Become a Certified Yoga Teacher</h3>
             <p className={styles.overviewText}>
-              Our comprehensive teacher training program is designed to deepen your practice and give you the skills, confidence, and certification needed to teach yoga professionally. Led by <strong>Richa Mishra</strong> (MSc Yogic Science + AYUSH certified), who brings over 12 years of extensive experience teaching across hospitals, corporate environments, and the naval base.
+              Our comprehensive teacher training program is designed to deepen your practice and give you the skills, confidence, and certification needed to teach yoga professionally. Led by <strong>Richa Mishra</strong> (MSc Yogic Science + AYUSH certified), who brings over 15+ years of extensive experience teaching across hospitals, corporate environments, and the naval base.
             </p>
             
             <div className={styles.focusAreasCard}>

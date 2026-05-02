@@ -8,7 +8,15 @@ export default function Footer() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <h3>Richa Tattva <span>Yoga</span></h3>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              
+        <img 
+          src="/public/images/download (2).png" 
+          alt="Richa Tattva Yoga Logo"
+          style={{ height: '40px', width: 'auto' }}
+        />
+              <h3 style={{ marginBottom: 0 }}>Richa Tattva <span>Yoga</span></h3>
+            </div>
             <p>
               Mind • Body • Spirit<br/>
               Empowering your wellness journey through personalized yoga practices.
@@ -18,10 +26,9 @@ export default function Footer() {
           <div>
             <h4 className={styles.title}>Quick Links</h4>
             <ul className={styles.links}>
-              <li className={styles.link}><Link href="#why-yoga">Why Yoga</Link></li>
-              <li className={styles.link}><Link href="#pricing">Pricing</Link></li>
-              <li className={styles.link}><Link href="#schedule">Schedule</Link></li>
-              <li className={styles.link}><Link href="#instructor">Meet the Instructor</Link></li>
+              <li className={styles.link}><Link href="/#why-yoga">Why Yoga</Link></li>
+              <li className={styles.link}><Link href="/#pricing">Pricing</Link></li>
+              <li className={styles.link}><Link href="/instructor">Meet the Instructor</Link></li>
             </ul>
           </div>
 
@@ -37,13 +44,13 @@ export default function Footer() {
           <div>
             <h4 className={styles.title}>Connect With Us</h4>
             <div className={styles.socialLinks}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
+              <a href="https://www.instagram.com/richa_tattvayoga/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100063961543037" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
+              <a href="https://www.youtube.com/@Richa_Tattvayoga" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
                 <FaYoutube size={24} />
               </a>
               <a href="https://wa.me/917892034782" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="WhatsApp">

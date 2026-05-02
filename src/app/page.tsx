@@ -22,9 +22,9 @@ export default function Home() {
         <Hero />
         <WhyYoga />
         <YouTubeSection />
-        <Pricing />
-        <TeacherTraining />
         <Instructor />
+        <TeacherTraining />
+        <Pricing />
         <Gallery />
         <Testimonials />
         <FAQ />

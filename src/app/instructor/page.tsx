@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import styles from './instructor.module.css';
-import { GraduationCap, Award, BookOpen, Star, Clock } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Star, Clock, Heart, Users, Shield, Camera } from 'lucide-react';
 
 export const metadata = {
   title: 'About the Instructor | Richa Tattva Yoga',
@@ -17,87 +17,111 @@ export default function InstructorPage() {
       <main className={styles.pageWrapper}>
         <div className={styles.hero}>
           <div className="container">
-            <h1>Meet Richa Mishra</h1>
-            <p>Founder & Lead Instructor</p>
+            <h1>Richa Mishra</h1>
+            <p>Founder & Lead Yoga Instructor</p>
+            <p style={{ marginTop: '0.5rem', fontSize: '1rem' }}>Blending Science, Spirituality, and Therapeutic Yoga for Holistic Well-being</p>
           </div>
         </div>
 
         <div className={`container ${styles.contentSection}`}>
           <div className={styles.splitLayout}>
             <div className={styles.imagePlaceholder}>
-              <div style={{ textAlign: 'center' }}>
-                <p>Instructor Portrait Image</p>
-                <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>Place your image here</p>
-              </div>
+              {/* Image 2 -> INSTRUCTOR IMAGE (woman in saree) */}
+              <img 
+  src="public/images/WhatsApp Image 2026-05-02 at 10.30.05 PM.jpeg" 
+  alt="Richa Tattva Yoga Logo"
+  style={{ height: '40px', width: 'auto' }}
+/>
             </div>
 
             <div className={styles.story}>
               <h2>My Journey</h2>
               <p>
-                My journey with yoga started over a decade ago. Coming from a technical background, 
-                I discovered yoga as a powerful tool to manage stress and find balance in a fast-paced world.
+                Richa Mishra’s journey into yoga is as unique as it is inspiring. With a strong foundation in technical education—holding degrees in B.Tech (Electronics & Communication Engineering), M.Tech (VLSI Design), and B.Ed (Bachelor of Education)—she spent years in the academic and engineering world. Her experience as an educator and professor gave her a structured, scientific approach to learning and teaching.
               </p>
               <p>
-                Driven by a deep passion for holistic wellness, I transitioned from my engineering roots 
-                (B.Tech & M.Tech) to fully embrace the ancient science of yoga. This shift was not just 
-                about changing careers, but about finding my true calling in helping others achieve optimal 
-                health.
+                However, a deeper calling toward holistic health, mental well-being, and the profound science of yoga led her to pursue an MSc in Yogic Science from Annamalai University. This transition was not just a career change—it was a life transformation. Combining her analytical mindset with the ancient wisdom of yoga, Richa developed a teaching methodology that is both scientifically grounded and spiritually enriching.
               </p>
               <p>
-                Today, I am dedicated to sharing this transformative practice. My teaching style blends 
-                the traditional aspects of yogic science with modern anatomical understanding, ensuring 
-                that every student builds physical strength, mental clarity, and emotional resilience 
-                safely and effectively.
+                Today, with over 15+ years of dedicated practice and teaching experience, she has impacted diverse communities—from defense personnel and corporate employees to patients requiring therapeutic care. Her approach focuses on integrating yoga into modern lifestyles for sustainable physical, mental, and emotional well-being.
               </p>
-              <p>
-                Over the past 12 years, I have had the privilege of teaching in diverse environments, 
-                from hospitals to corporate wellness programs and naval bases, adapting the practice to 
-                meet the unique needs of each individual.
-              </p>
+              <blockquote style={{ fontStyle: 'italic', borderLeft: '4px solid var(--primary)', paddingLeft: '1.5rem', marginTop: '2.5rem', fontSize: '1.25rem', color: 'var(--secondary)' }}>
+                "Yoga is not just practice—it is a bridge between science and self-awareness."
+              </blockquote>
             </div>
           </div>
 
-          <div className={styles.qualifications}>
-            <h3>Qualifications & Certifications</h3>
-            <div className={styles.timeline}>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><Star size={24} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>MSc in Yogic Science</h4>
-                  <p>In-depth academic and practical mastery of classical yoga traditions and philosophy.</p>
-                </div>
+          <div className={styles.qualifications} style={{ marginTop: '5rem' }}>
+            <h3 style={{ textAlign: 'center', color: 'var(--primary)', marginBottom: '3rem', fontSize: '2rem' }}>Professional & Academic Background</h3>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+              <div>
+                <h4 style={{ color: 'var(--secondary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><BookOpen /> Academic Background</h4>
+                <ul style={{ listStyleType: 'disc', marginLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <li>B.Tech – Electronics & Communication Engineering</li>
+                  <li>M.Tech – VLSI Design</li>
+                  <li>B.Ed – Bachelor of Education</li>
+                  <li>MSc in Yogic Science – Annamalai University</li>
+                </ul>
               </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><Award size={24} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>AYUSH Certified Yoga Practitioner</h4>
-                  <p>Recognized by the Ministry of AYUSH, Government of India.</p>
-                </div>
+
+              <div>
+                <h4 style={{ color: 'var(--secondary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Award /> Certifications</h4>
+                <ul style={{ listStyleType: 'disc', marginLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <li>Certified Yoga Instructor – SVYASA University, Bangalore</li>
+                  <li>Yoga Wellness Instructor Level-2 – Ministry of AYUSH, Government of India</li>
+                  <li>Authorized Yoga Volunteer Certification Course Trainer – Ministry of AYUSH</li>
+                  <li>Trained in: Reiki, Progressive Muscle Relaxation Therapy, Face Yoga, Chair Yoga, Laughter Yoga</li>
+                </ul>
               </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><GraduationCap size={24} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Engineering Background</h4>
-                  <p>B.Tech & M.Tech in Engineering, bringing an analytical and structured approach to teaching.</p>
-                </div>
+
+              <div>
+                <h4 style={{ color: 'var(--secondary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Clock /> Professional Experience</h4>
+                <ul style={{ listStyleType: 'disc', marginLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <li><strong>Yoga Wellness Instructor</strong> – Station Health Organisation, Naval Base Kochi (Led wellness programs for naval personnel and their families)</li>
+                  <li><strong>Yoga Therapist</strong> – INHS Sanjivani Hospital, Kochi (Conducted sessions for psychiatric patients - anxiety, depression, mood disorders)</li>
+                  <li><strong>Corporate Yoga & Wellness Trainer</strong> – Bharat Electronics Ltd (BEL), Bangalore (Designed programs to improve employee health and productivity)</li>
+                  <li><strong>Yoga Expert</strong> – Circle Health (Health-Tech Startup)</li>
+                  <li><strong>Yoga Fitness Trainer</strong> – Delivered high-energy sessions for weight management and physical wellness</li>
+                </ul>
               </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><BookOpen size={24} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>Educational Expertise</h4>
-                  <p>Bachelor of Education (B.Ed), ensuring high-quality instructional methods.</p>
-                </div>
-              </div>
-              <div className={styles.timelineItem}>
-                <div className={styles.timelineIcon}><Clock size={24} /></div>
-                <div className={styles.timelineContent}>
-                  <h4>12+ Years Experience</h4>
-                  <p>Extensive experience teaching in hospitals, corporates, and the naval base.</p>
-                </div>
+
+              <div>
+                <h4 style={{ color: 'var(--secondary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Star /> Areas of Specialization</h4>
+                <ul style={{ listStyleType: 'disc', marginLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <li>Mental Health Support (Anxiety, Depression, Mood Disorders)</li>
+                  <li>Weight Management & Therapeutic Yoga</li>
+                  <li>Workplace Stress & Productivity Enhancement</li>
+                  <li>Women’s Health & Post-Pregnancy Yoga</li>
+                  <li>Senior Citizens & Chair Yoga</li>
+                  <li>Psychiatric Patient Care</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Workshops & Community Impact (Gallery) */}
+        <div style={{ backgroundColor: 'var(--bg-color)', padding: '5rem 0' }}>
+          <div className="container">
+            <h3 style={{ textAlign: 'center', color: 'var(--primary)', marginBottom: '1rem', fontSize: '2rem' }}>Workshops & Community Impact</h3>
+            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 3rem auto', color: 'var(--text-light)' }}>
+              Richa has conducted numerous workshops and training sessions across corporates, defense institutions, healthcare facilities, and community groups—focusing on accessible, practical, and impactful yoga practices.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1.5rem' }}>
+              {[...Array(15)].map((_, i) => (
+                <div key={i} style={{ backgroundColor: 'var(--white)', aspectRatio: '1/1', borderRadius: 'var(--radius-sm)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border-color)', transition: 'all 0.3s ease' }} className="hover-lift">
+                  <Camera size={32} style={{ color: 'var(--text-light)', marginBottom: '0.5rem' }} />
+                  <span style={{ fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '500' }}>Image {i + 3}</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '0.25rem' }}>
+                    {i % 3 === 0 ? 'Corporate Session' : i % 3 === 1 ? 'Naval Workshop' : 'Group Training'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
       </main>
       <Footer />
       <WhatsAppButton />
