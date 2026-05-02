@@ -15,6 +15,7 @@
 }
 
 .gridItem {
+  position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: var(--white);

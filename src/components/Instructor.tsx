@@ -2,6 +2,7 @@
 
 import styles from "./Instructor.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Instructor() {
   return (
@@ -11,12 +12,14 @@ export default function Instructor() {
           <div className={styles.imageCol}>
             <div className={styles.decorativeShape}></div>
             <div className={styles.imagePlaceholder}>
-              {/* Image 2 -> INSTRUCTOR IMAGE (woman in saree) */}
-<img 
-  src="public/images/WhatsApp Image 2026-05-02 at 10.30.05 PM.jpeg" 
-  alt="Richa Tattva Yoga Logo"
-  style={{ height: '40px', width: 'auto' }}
-/>
+              <Image 
+                src="/images/instructor.jpeg" 
+                alt="Richa Mishra - Yoga Instructor"
+                width={500}
+                height={600}
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: 'var(--radius-md)', aspectRatio: '4/5' }}
+                priority
+              />
             </div>
           </div>
           

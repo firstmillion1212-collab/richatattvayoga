@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import styles from './instructor.module.css';
 import { GraduationCap, Award, BookOpen, Star, Clock, Heart, Users, Shield, Camera } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About the Instructor | Richa Tattva Yoga',
@@ -26,12 +27,14 @@ export default function InstructorPage() {
         <div className={`container ${styles.contentSection}`}>
           <div className={styles.splitLayout}>
             <div className={styles.imagePlaceholder}>
-              {/* Image 2 -> INSTRUCTOR IMAGE (woman in saree) */}
-              <img 
-  src="public/images/WhatsApp Image 2026-05-02 at 10.30.05 PM.jpeg" 
-  alt="Richa Tattva Yoga Logo"
-  style={{ height: '40px', width: 'auto' }}
-/>
+              <Image 
+                src="/images/instructor.jpeg" 
+                alt="Richa Mishra - Yoga Instructor"
+                width={500}
+                height={700}
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: 'var(--radius-md)', aspectRatio: '3/4' }}
+                priority
+              />
             </div>
 
             <div className={styles.story}>
@@ -110,12 +113,14 @@ export default function InstructorPage() {
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1.5rem' }}>
               {[...Array(15)].map((_, i) => (
-                <div key={i} style={{ backgroundColor: 'var(--white)', aspectRatio: '1/1', borderRadius: 'var(--radius-sm)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border-color)', transition: 'all 0.3s ease' }} className="hover-lift">
-                  <Camera size={32} style={{ color: 'var(--text-light)', marginBottom: '0.5rem' }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '500' }}>Image {i + 3}</span>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '0.25rem' }}>
-                    {i % 3 === 0 ? 'Corporate Session' : i % 3 === 1 ? 'Naval Workshop' : 'Group Training'}
-                  </span>
+                <div key={i} style={{ position: 'relative', aspectRatio: '1/1', borderRadius: 'var(--radius-sm)', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border-color)', transition: 'all 0.3s ease' }} className="hover-lift">
+                  <Image
+                    src={`/images/gallery-${i + 1}.jpeg`}
+                    alt={`Yoga Workshop ${i + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                  />
                 </div>
               ))}
             </div>
