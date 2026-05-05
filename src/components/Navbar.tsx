@@ -23,12 +23,11 @@ export default function Navbar() {
     <nav className={classNames(styles.navbar, { [styles.scrolled]: isScrolled })}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          {/* Image 1 -> LOGO */}
-        <img 
-          src="/public/images/download (2).png" 
-          alt="Richa Tattva Yoga Logo"
-          style={{ height: '40px', width: 'auto' }}
-        />
+          <img 
+            src="/images/logo.png" 
+            alt="Richa Tattva Yoga Logo" 
+            style={{ width: '40px', height: '40px', objectFit: 'contain' }}
+          />
           <div>Richa Tattva <span>Yoga</span></div>
         </Link>
 

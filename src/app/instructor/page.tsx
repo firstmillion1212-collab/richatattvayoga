@@ -5,6 +5,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import styles from './instructor.module.css';
 import { GraduationCap, Award, BookOpen, Star, Clock, Heart, Users, Shield, Camera } from 'lucide-react';
 import Image from 'next/image';
+import Gallery from '@/components/Gallery';
 
 export const metadata = {
   title: 'About the Instructor | Richa Tattva Yoga',
@@ -105,27 +106,7 @@ export default function InstructorPage() {
         </div>
 
         {/* Workshops & Community Impact (Gallery) */}
-        <div style={{ backgroundColor: 'var(--bg-color)', padding: '5rem 0' }}>
-          <div className="container">
-            <h3 style={{ textAlign: 'center', color: 'var(--primary)', marginBottom: '1rem', fontSize: '2rem' }}>Workshops & Community Impact</h3>
-            <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 3rem auto', color: 'var(--text-light)' }}>
-              Richa has conducted numerous workshops and training sessions across corporates, defense institutions, healthcare facilities, and community groups—focusing on accessible, practical, and impactful yoga practices.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1.5rem' }}>
-              {[...Array(15)].map((_, i) => (
-                <div key={i} style={{ position: 'relative', aspectRatio: '1/1', borderRadius: 'var(--radius-sm)', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border-color)', transition: 'all 0.3s ease' }} className="hover-lift">
-                  <Image
-                    src={`/images/gallery-${i + 1}.jpeg`}
-                    alt={`Yoga Workshop ${i + 1}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: 'cover' }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <Gallery />
 
       </main>
       <Footer />

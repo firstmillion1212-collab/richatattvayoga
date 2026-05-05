@@ -9,12 +9,11 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-              
-        <img 
-          src="/public/images/download (2).png" 
-          alt="Richa Tattva Yoga Logo"
-          style={{ height: '40px', width: 'auto' }}
-        />
+              <img 
+                src="/images/logo.png" 
+                alt="Richa Tattva Yoga Logo"
+                style={{ width: '40px', height: '40px', objectFit: 'contain' }}
+              />
               <h3 style={{ marginBottom: 0 }}>Richa Tattva <span>Yoga</span></h3>
             </div>
             <p>
