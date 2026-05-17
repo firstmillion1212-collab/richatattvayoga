@@ -18,9 +18,10 @@
 }
 
 .navContainer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+  gap: 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -42,14 +43,30 @@
 
 .navLinks {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.desktopCta {
+  display: block;
+}
+
+.mobileCta {
+  display: none;
 }
 
 .navLink {
   font-weight: 500;
   color: var(--text-dark);
   position: relative;
+  font-size: 0.95rem;
 }
 
 .navLink::after {
@@ -71,12 +88,49 @@
   display: none;
   font-size: 1.5rem;
   color: var(--secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .navLinks {
-    display: none; /* Can implement mobile menu later if needed */
+@media (max-width: 960px) {
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
   }
+  
+  .desktopCta {
+    display: none;
+  }
+  
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 99;
+  }
+
+  .navLinks.mobileOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mobileCta {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
   .mobileMenuBtn {
     display: block;
   }

@@ -31,21 +31,33 @@ export default function Navbar() {
           <div>Richa Tattva <span>Yoga</span></div>
         </Link>
 
-        <div className={styles.navLinks}>
-          <Link href="/#why-yoga" className={styles.navLink}>Why Yoga</Link>
-          <Link href="/#pricing" className={styles.navLink}>Pricing</Link>
-          <Link href="/instructor" className={styles.navLink}>Instructor</Link>
-          <button className="btn-primary" onClick={() => (document.getElementById('book-demo') as HTMLDialogElement)?.showModal()}>
+        <div className={classNames(styles.navLinks, { [styles.mobileOpen]: isMobileMenuOpen })}>
+          <Link href="/#why-yoga" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Why Yoga</Link>
+          <Link href="/#pricing" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Pricing</Link>
+          <Link href="/instructor" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Instructor</Link>
+          <Link href="/#teacher-training" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Teacher Training</Link>
+          <Link href="/#video-testimonials" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Testimonials</Link>
+          
+          <button className={`btn-primary ${styles.mobileCta}`} onClick={() => {
+            setIsMobileMenuOpen(false);
+            (document.getElementById('book-demo') as HTMLDialogElement)?.showModal();
+          }}>
             Book a Free Demo
           </button>
         </div>
 
-        <button 
-          className={styles.mobileMenuBtn}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className={styles.navRight}>
+          <button className={`btn-primary ${styles.desktopCta}`} onClick={() => (document.getElementById('book-demo') as HTMLDialogElement)?.showModal()}>
+            Book a Free Demo
+          </button>
+          
+          <button 
+            className={styles.mobileMenuBtn}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
     </nav>
   );
