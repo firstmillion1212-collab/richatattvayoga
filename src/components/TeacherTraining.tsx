@@ -125,11 +125,11 @@ const TeacherTraining = () => {
         <div className={styles.ctaSection}>
           <h3>Ready to Begin Your Teaching Journey?</h3>
           <div className={styles.ctaButtons}>
-            <a href="https://wa.me/917892034782?text=Hi,%20I'm%20interested%20in%20the%20Teacher%20Training%20Certification" target="_blank" rel="noopener noreferrer" className={styles.btnCta}>
+            <a href="https://wa.me/917204637222?text=Hi,%20I'm%20interested%20in%20the%20Teacher%20Training%20Certification" target="_blank" rel="noopener noreferrer" className={styles.btnCta}>
               <MessageCircle size={20} />
               Apply via WhatsApp
             </a>
-            <a href="mailto:firstmillion1212@gmail.com?subject=Teacher Training Application" className={styles.btnOutline}>
+            <a href="mailto:richatattvayoga@gmail.com?subject=Teacher Training Application" className={styles.btnOutline}>
               <Mail size={20} />
               Email Us
             </a>

@@ -10,7 +10,7 @@ export default function ConnectWhatsApp() {
           Connect with us directly on WhatsApp to get quick answers about class schedules, pricing, and personalized plans.
         </p>
         <a 
-          href="https://wa.me/917892034782" 
+          href="https://wa.me/917204637222" 
           target="_blank" 
           rel="noopener noreferrer"
           className="btn-primary"

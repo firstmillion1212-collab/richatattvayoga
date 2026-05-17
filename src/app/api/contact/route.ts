@@ -3,7 +3,7 @@ import { supabase } from '@/lib/supabase';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY || 'dummy_key_for_build');
-const adminEmail = 'firstmillion1212@gmail.com';
+const adminEmail = 'richatattvayoga@gmail.com';
 
 export async function POST(request: Request) {
   try {

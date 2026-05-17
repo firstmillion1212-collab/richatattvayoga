@@ -64,7 +64,7 @@ export default function Contact() {
               <div className={styles.icon}><Phone size={24} /></div>
               <div className={styles.cardContent}>
                 <h4>Call Us</h4>
-                <p>+91 7892034782<br/>Mon-Sat: 6am to 8pm</p>
+                <p>+91 7204637222<br/>Mon-Sat: 6am to 8pm</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function Contact() {
               <div className={styles.icon}><Mail size={24} /></div>
               <div className={styles.cardContent}>
                 <h4>Email Us</h4>
-                <p>firstmillion1212@gmail.com<br/>We'll reply within 24 hours</p>
+                <p>richatattvayoga@gmail.com<br/>We'll reply within 24 hours</p>
               </div>
             </div>
           </div>

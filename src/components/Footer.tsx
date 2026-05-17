@@ -35,8 +35,8 @@ export default function Footer() {
             <h4 className={styles.title}>Contact</h4>
             <div className={styles.contactInfo}>
               <p>Yeshwanthpur, Bangalore</p>
-              <p>+91 7892034782</p>
-              <p>firstmillion1212@gmail.com</p>
+              <p>+91 7204637222</p>
+              <p>richatattvayoga@gmail.com</p>
             </div>
           </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
               <a href="https://www.youtube.com/@Richa_Tattvayoga" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="YouTube">
                 <FaYoutube size={24} />
               </a>
-              <a href="https://wa.me/917892034782" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="WhatsApp">
+              <a href="https://wa.me/917204637222" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="WhatsApp">
                 <FaWhatsapp size={24} />
               </a>
             </div>
