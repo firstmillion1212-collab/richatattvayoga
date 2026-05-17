@@ -8,11 +8,14 @@
 }
 
 .toggle {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
   background-color: var(--bg-color);
   border-radius: var(--radius-full);
   padding: 0.5rem;
-  margin-top: 2rem;
 }
 
 .toggleBtn {
@@ -116,12 +119,15 @@
 }
 
 .card.highlight .btn {
-  background-color: var(--white);
-  color: var(--secondary);
+  background-color: var(--accent) !important;
+  color: var(--secondary) !important;
+  font-weight: 700;
+  border: none;
 }
 
 .card.highlight .btn:hover {
-  background-color: var(--accent);
+  background-color: var(--white) !important;
+  color: var(--secondary) !important;
 }
 
 @media (max-width: 900px) {

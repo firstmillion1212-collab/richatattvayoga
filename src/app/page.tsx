@@ -6,6 +6,7 @@ import Pricing from "@/components/Pricing";
 import TeacherTraining from "@/components/TeacherTraining";
 import Instructor from "@/components/Instructor";
 import Gallery from "@/components/Gallery";
+import ConnectWhatsApp from "@/components/ConnectWhatsApp";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -26,6 +27,7 @@ export default function Home() {
         <Instructor />
         <TeacherTraining />
         <Pricing />
+        <ConnectWhatsApp />
         <Gallery />
         <VideoTestimonials />
         <Testimonials />

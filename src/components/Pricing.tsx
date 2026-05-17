@@ -25,11 +25,12 @@ const plans = {
     {
       name: "2 Days / Week",
       price: "₹1500 / month",
-      sessions: "Pick any 2 days: Mon, Wed, Fri",
+      sessions: "Days: Monday, Wednesday, Friday\nTimings: 7:00 AM – 8:00 AM or 6:15 PM – 7:15 PM",
       features: [
-        "Morning: 7:00 AM – 8:00 AM",
-        "Evening: 6:15 PM – 7:15 PM",
+        "Days can be chosen out of Mon/Wed/Fri",
+        "Timings can be chosen",
         "Access to live group classes",
+        "Beginner and all levels friendly",
         "ONLINE ONLY via live video sessions"
       ],
       highlight: false
@@ -37,11 +38,11 @@ const plans = {
     {
       name: "3 Days / Week",
       price: "₹2000 / month",
-      sessions: "Monday, Wednesday, Friday",
+      sessions: "Days: Monday, Wednesday, Friday\nTimings: 7:00 AM – 8:00 AM or 6:15 PM – 7:15 PM",
       features: [
-        "Morning: 7:00 AM – 8:00 AM",
-        "Evening: 6:15 PM – 7:15 PM",
-        "Access to all 3 group classes",
+        "Timings can be chosen",
+        "Access to live group classes",
+        "Beginner and all levels friendly",
         "ONLINE ONLY via live video sessions"
       ],
       highlight: true
@@ -81,7 +82,7 @@ export default function Pricing() {
             <div key={idx} className={classNames(styles.card, { [styles.highlight]: plan.highlight })}>
               <h3 className={styles.planName}>{plan.name}</h3>
               <div className={styles.planPrice}>{plan.price}</div>
-              <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', textAlign: 'center' }}>{plan.sessions}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', textAlign: 'center', whiteSpace: 'pre-wrap' }}>{plan.sessions}</div>
               
               <ul className={styles.features}>
                 {plan.features.map((feature, fIdx) => (
