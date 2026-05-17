@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Richa Tattva Yoga | Mind • Body • Spirit",
-  description: "Personalized yoga sessions for inner peace, strength, and wellness by Richa Mishra in Yeshwanthpur, Bangalore.",
-  keywords: ["Yoga", "Bangalore", "Wellness", "Richa Tattva Yoga", "Personalized Yoga"],
+  title: "Richa Tattva Yoga | Online Yoga Classes & Training",
+  description: "Personalized online yoga sessions and teacher training for inner peace, strength, and wellness by Richa Mishra.",
+  keywords: ["Online Yoga", "Live Yoga Classes", "Yoga Teacher Training", "Wellness", "Richa Tattva Yoga", "Personalized Yoga"],
 };
 
 export default function RootLayout({

@@ -7,16 +7,16 @@ const TeacherTraining = () => {
     <section className={`section ${styles.trainingSection}`} id="teacher-training">
       <div className="container">
         <div className={styles.header}>
-          <h2>Teacher Training & Certification</h2>
-          <p>Transform your passion into a fulfilling career with expert-led training</p>
+          <h2>Online Teacher Training Program</h2>
+          <p>Transform your passion into a fulfilling career with expert-led online training</p>
         </div>
 
         <div className={styles.splitLayout}>
           {/* Left Panel */}
           <div className={styles.leftPanel}>
-            <h3>Become a Certified Yoga Teacher</h3>
+            <h3>Become a Certified Yoga Teacher Online</h3>
             <p className={styles.overviewText}>
-              Our comprehensive teacher training program is designed to deepen your practice and give you the skills, confidence, and certification needed to teach yoga professionally. Led by <strong>Richa Mishra</strong> (MSc Yogic Science + AYUSH certified), who brings over 15+ years of extensive experience teaching across hospitals, corporate environments, and the naval base.
+              Our comprehensive teacher training program is designed to deepen your practice and give you the skills, confidence, and certification needed to teach yoga professionally. Led by <strong>Richa Mishra</strong> (MSc Yogic Science + AYUSH certified), who brings over 15+ years of extensive experience teaching across hospitals, corporate environments, and the naval base. All sessions are conducted 100% online.
             </p>
             
             <div className={styles.focusAreasCard}>
@@ -104,19 +104,19 @@ const TeacherTraining = () => {
           <div className={styles.detailsGrid}>
             <div className={styles.detailBlock}>
               <span>Duration</span>
-              <strong>200 Hours / 3 Months</strong>
+              <strong>200 Hours / 2 Months</strong>
             </div>
             <div className={styles.detailBlock}>
               <span>Mode</span>
-              <strong>Hybrid (Online + Offline)</strong>
+              <strong>100% Online</strong>
+            </div>
+            <div className={styles.detailBlock}>
+              <span>Fees</span>
+              <strong>₹5000</strong>
             </div>
             <div className={styles.detailBlock}>
               <span>Certification</span>
               <strong>AYUSH Aligned</strong>
-            </div>
-            <div className={styles.detailBlock}>
-              <span>Eligibility</span>
-              <strong>Open to All Levels</strong>
             </div>
           </div>
         </div>

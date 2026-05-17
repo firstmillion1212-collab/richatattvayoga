@@ -9,7 +9,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <Image 
         src="/images/hero_yoga_bg.png" 
-        alt="Calm luxury yoga studio" 
+        alt="Calm luxury online yoga practice" 
         fill
         priority
         className={styles.bgImage}

@@ -8,42 +8,43 @@ import classNames from "classnames";
 const plans = {
   oneOnOne: [
     {
-      name: "Starter",
-      sessions: "4 Sessions / Month",
-      features: ["1 session per week", "Personalized assessment", "Flexible timing", "Email support"],
-      highlight: false
-    },
-    {
-      name: "Premium",
-      sessions: "8 Sessions / Month",
-      features: ["2 sessions per week", "Customized diet plan", "Priority scheduling", "WhatsApp support"],
-      highlight: true
-    },
-    {
-      name: "Elite",
-      sessions: "12 Sessions / Month",
-      features: ["3 sessions per week", "Advanced postures", "Meditation guidance", "24/7 priority support"],
-      highlight: false
+      name: "Customized Private Journey",
+      price: "Flexible Pricing",
+      sessions: "Personalized Schedule",
+      features: [
+        "Fully customizable according to student needs",
+        "Personalized one-on-one sessions",
+        "Pricing depends on requirements/goals",
+        "ONLINE ONLY via live video sessions"
+      ],
+      highlight: true,
+      customCTA: "Contact us to know pricing based on your requirements."
     }
   ],
   group: [
     {
-      name: "Basic",
-      sessions: "2 Days / Week",
-      features: ["Access to group classes", "Beginner friendly", "Community support"],
+      name: "2 Days / Week",
+      price: "₹1500 / month",
+      sessions: "Pick any 2 days: Mon, Wed, Fri",
+      features: [
+        "Morning: 7:00 AM – 8:00 AM",
+        "Evening: 6:15 PM – 7:15 PM",
+        "Access to live group classes",
+        "ONLINE ONLY via live video sessions"
+      ],
       highlight: false
     },
     {
-      name: "Standard",
-      sessions: "3 Days / Week",
-      features: ["Access to all group classes", "Mixed levels", "Monthly progress tracking"],
+      name: "3 Days / Week",
+      price: "₹2000 / month",
+      sessions: "Monday, Wednesday, Friday",
+      features: [
+        "Morning: 7:00 AM – 8:00 AM",
+        "Evening: 6:15 PM – 7:15 PM",
+        "Access to all 3 group classes",
+        "ONLINE ONLY via live video sessions"
+      ],
       highlight: true
-    },
-    {
-      name: "Unlimited",
-      sessions: "6 Days / Week",
-      features: ["Unlimited class access", "Special workshops included", "Advanced techniques"],
-      highlight: false
     }
   ]
 };
@@ -79,7 +80,8 @@ export default function Pricing() {
           {activePlans.map((plan, idx) => (
             <div key={idx} className={classNames(styles.card, { [styles.highlight]: plan.highlight })}>
               <h3 className={styles.planName}>{plan.name}</h3>
-              <div className={styles.planPrice}>{plan.sessions}</div>
+              <div className={styles.planPrice}>{plan.price}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', textAlign: 'center' }}>{plan.sessions}</div>
               
               <ul className={styles.features}>
                 {plan.features.map((feature, fIdx) => (
@@ -90,14 +92,17 @@ export default function Pricing() {
                 ))}
               </ul>
               
+              {(plan as any).customCTA ? (
+                <div style={{ textAlign: 'center', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--secondary)' }}>
+                  {(plan as any).customCTA}
+                </div>
+              ) : null}
+
               <button 
                 className={`btn-primary ${styles.btn}`}
                 onClick={() => {
                   const modal = document.getElementById('book-demo') as HTMLDialogElement;
-                  if (modal) {
-                    // We could potentially set the session type in the modal state here
-                    modal.showModal();
-                  }
+                  if (modal) modal.showModal();
                 }}
               >
                 Contact to Book

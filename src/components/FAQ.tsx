@@ -11,20 +11,20 @@ const faqs = [
     answer: "Not at all! We have classes tailored for all levels, including complete beginners. I will guide you step-by-step to ensure you feel comfortable and safe."
   },
   {
-    question: "What should I wear and bring to a class?",
-    answer: "Wear comfortable, breathable clothing that allows you to move freely. Bring a water bottle and a small towel. If you have your own yoga mat, you are welcome to bring it, otherwise we provide mats at the studio."
+    question: "What should I wear to a class?",
+    answer: "Wear comfortable, breathable clothing that allows you to move freely. Keep a water bottle and a small towel nearby. Yoga is typically practiced barefoot, so no special footwear is needed."
   },
   {
     question: "How long is each session?",
-    answer: "A typical group session lasts for 60 minutes. Our weekend workshops may extend up to 90 minutes. 1-on-1 sessions are customized based on your specific requirements."
+    answer: "A typical group session lasts for 60 minutes. 1-on-1 sessions are customized based on your specific requirements."
   },
   {
     question: "Can I do yoga if I have a pre-existing injury or medical condition?",
     answer: "Yes, but it's important to consult your physician first. Please inform me about any injuries or conditions before the class so I can provide suitable modifications for the poses."
   },
   {
-    question: "Do you offer online classes?",
-    answer: "Yes, we offer both in-person sessions at our Yeshwanthpur studio and live online sessions for those who prefer to practice from the comfort of their home."
+    question: "Are your yoga classes online or in-person?",
+    answer: "All of our yoga classes and teacher training programs are conducted 100% online via live video sessions. This allows you to practice from the comfort of your home while receiving dedicated, personalized instruction."
   }
 ];
 
