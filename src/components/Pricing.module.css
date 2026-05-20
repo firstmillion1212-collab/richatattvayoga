@@ -33,15 +33,17 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .card {
+  flex: 1 1 300px;
+  max-width: 350px;
   background-color: var(--bg-color);
   border-radius: var(--radius-lg);
   padding: 3rem 2rem;
@@ -82,10 +84,37 @@
   font-family: var(--font-serif);
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: var(--secondary);
 }
 
 .card.highlight .planPrice {
   color: var(--white);
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.card.highlight .originalPrice {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sessionsText {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.card.highlight .sessionsText {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .features {
@@ -119,15 +148,17 @@
 }
 
 .card.highlight .btn {
-  background-color: var(--accent) !important;
+  background-color: var(--white) !important;
   color: var(--secondary) !important;
   font-weight: 700;
   border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .card.highlight .btn:hover {
-  background-color: var(--white) !important;
+  background-color: #f0f0f0 !important;
   color: var(--secondary) !important;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {

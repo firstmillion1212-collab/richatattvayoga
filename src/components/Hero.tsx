@@ -9,7 +9,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <Image 
         src="/images/hero_yoga_bg.png" 
-        alt="Calm luxury online yoga practice" 
+        alt="Richa Tattva Yoga - Premium Online Yoga Classes and Teacher Training in India" 
         fill
         priority
         className={styles.bgImage}

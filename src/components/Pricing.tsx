@@ -24,7 +24,8 @@ const plans = {
   group: [
     {
       name: "2 Days / Week",
-      price: "₹1500 / month",
+      originalPrice: "₹1500",
+      price: "₹999 / month",
       sessions: "Days: Monday, Wednesday, Friday\nTimings: 7:00 AM – 8:00 AM or 6:15 PM – 7:15 PM",
       features: [
         "Days can be chosen out of Mon/Wed/Fri",
@@ -37,7 +38,8 @@ const plans = {
     },
     {
       name: "3 Days / Week",
-      price: "₹2000 / month",
+      originalPrice: "₹2000",
+      price: "₹1499 / month",
       sessions: "Days: Monday, Wednesday, Friday\nTimings: 7:00 AM – 8:00 AM or 6:15 PM – 7:15 PM",
       features: [
         "Timings can be chosen",
@@ -51,7 +53,7 @@ const plans = {
 };
 
 export default function Pricing() {
-  const [isGroup, setIsGroup] = useState(false);
+  const [isGroup, setIsGroup] = useState(true);
   const activePlans = isGroup ? plans.group : plans.oneOnOne;
 
   return (
@@ -81,8 +83,11 @@ export default function Pricing() {
           {activePlans.map((plan, idx) => (
             <div key={idx} className={classNames(styles.card, { [styles.highlight]: plan.highlight })}>
               <h3 className={styles.planName}>{plan.name}</h3>
+              {(plan as any).originalPrice && (
+                <div className={styles.originalPrice}>{(plan as any).originalPrice}</div>
+              )}
               <div className={styles.planPrice}>{plan.price}</div>
-              <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', textAlign: 'center', whiteSpace: 'pre-wrap' }}>{plan.sessions}</div>
+              <div className={styles.sessionsText}>{plan.sessions}</div>
               
               <ul className={styles.features}>
                 {plan.features.map((feature, fIdx) => (
