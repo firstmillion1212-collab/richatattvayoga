@@ -42,6 +42,7 @@ const plans = {
       price: "₹1499 / month",
       sessions: "Days: Monday, Wednesday, Friday\nTimings: 7:00 AM – 8:00 AM or 6:15 PM – 7:15 PM",
       features: [
+        "Days can be chosen out of Mon/Wed/Fri",
         "Timings can be chosen",
         "Access to live group classes",
         "Beginner and all levels friendly",
