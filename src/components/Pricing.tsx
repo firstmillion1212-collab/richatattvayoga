@@ -105,7 +105,7 @@ export default function Pricing() {
               ) : null}
 
               <button 
-                className={`btn-primary ${styles.btn}`}
+                className={styles.btn}
                 onClick={() => {
                   const modal = document.getElementById('book-demo') as HTMLDialogElement;
                   if (modal) modal.showModal();

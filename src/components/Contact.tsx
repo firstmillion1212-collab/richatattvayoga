@@ -52,14 +52,7 @@ export default function Contact() {
 
         <div className={styles.grid}>
           <div className={styles.infoCards}>
-            <div className={styles.card}>
-              <div className={styles.icon}><MapPin size={24} /></div>
-              <div className={styles.cardContent}>
-                <h4>Visit Us</h4>
-                <p>Yeshwanthpur, Bangalore<br/>Karnataka, India</p>
-              </div>
-            </div>
-            
+
             <div className={styles.card}>
               <div className={styles.icon}><Phone size={24} /></div>
               <div className={styles.cardContent}>
